@@ -1,6 +1,6 @@
  body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: sans-serif;
       background-color: #f4f4f4;
       color: #333;
     }
@@ -74,20 +74,6 @@
 }
 
 
-.quote {
-  font-style: italic;
-  margin: 1em 0;
-  padding: 1em;
-  background-color: #f0f8ff;
-  border-left: 5px solid #005599;
-  border-radius: 5px;
-  color: #333;
-}
-
-
-
-
-
 
 
 
@@ -157,6 +143,19 @@ form button:hover {
 
 
 
+.quote {
+  font-style: italic;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #f0f8ff;
+  border-left: 5px solid #005599;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -174,4 +173,26 @@ form button:hover {
 
 .gallery img:hover {
   transform: scale(2.5);
+}
+
+
+.cv-button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.4em;
+  background-color: #005599;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #003f80;
+}
+
+.cv-button-wrapper {
+  text-align: center;
+  margin-top: 1.5em;
 }

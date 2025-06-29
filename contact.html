@@ -43,22 +43,6 @@
 
 
 
-<script>
-  const textarea = document.getElementById('message');
-
-  function autoResize(el) {
-    el.style.height = 'auto'; // reset height
-    el.style.height = el.scrollHeight + 'px'; // adjust to content
-  }
-
-  textarea.addEventListener('input', function () {
-    autoResize(this);
-  });
-
-  // Run once on page load to set initial height
-  window.addEventListener('load', () => autoResize(textarea));
-</script>
-
 
 
 
