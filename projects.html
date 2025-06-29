@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+  <meta charset="UTF-8">
+  <title>Projects – Hasan Aamir Jilani</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  
+  <style>
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      margin-top: 2em;
+    }
+
+    .project-box {
+      background-color: #e6f2ff;
+      border: 1px solid #99c2ff;
+      border-radius: 8px;
+      padding: 1em;
+      width: 280px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .project-box:hover {
+      transform: scale(1.03);
+    }
+
+    .project-details {
+      display: none;
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .launch-button {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.5em 1.2em;
+      background-color: #005599;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .launch-button:hover {
+      background-color: #003f80;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hasan Aamir Jilani</h1>
+    <p>Software Engineering Student | Frontend Enthusiast | Lifelong Learner</p>
+  </header>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="post.html">Posts</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Box 1 -->
+      <div class="project-box" onclick="toggleDetails('chess')">
+        <h3>Java Chess Game</h3>
+        <p>2-player chess game with GUI</p>
+      </div>
+
+      <!-- Project Box 2 (placeholder) -->
+      <div class="project-box" onclick="toggleDetails('comingsoon')">
+        <h3>Upcoming Project</h3>
+        <p>Details coming soon...</p>
+      </div>
+    </div>
+
+    <!-- Expanded details for Project 1 -->
+    <div id="chess" class="project-details">
+      <h3>Java Chess Game – Overview</h3>
+      <p>This project is a fully functional two-player chess game written in Java. The sprites for the chess 
+        pieces were taken from an open source library.
+        It features valid move detection, and a clean interface. It is my first ever project that I made. It is far 
+        from good, but I intend to improve it.
+      </p>
+      <p> 
+       And for the future, I plan to add different gamemodes, as well as Computer Engine. Stay Tuned. There are ofcourse some 
+       flaws even in this. For example:
+      </p>
+      <ul>
+        <li>Certain conditions of stalemate do not work</li>
+        <li>It does not check for checkmate after Promotion, so sometimes checkmate occurs, but game over message does not display</li>
+
+      </ul>
+
+      <div class="gallery">
+        <a href="chess screenshots/2.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/2.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/1.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/1.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/5.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/5.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/6.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/6.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/7.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/7.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/8.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/8.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/9.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/9.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/10.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/10.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/11.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/11.png" alt="Chess Board">
+        </a>
+        <a href="chess screenshots/12.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/12.png" alt="GameOver!">
+        </a>
+        <a href="chess screenshots/13.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/13.png" alt="Promotion">
+        </a>
+        <a href="chess screenshots/14.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/14.png" alt="Promotion">
+        </a>
+        <a href="chess screenshots/15.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/15.png" alt="Game Code">
+        </a>
+        <a href="chess screenshots/16.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/16.png" alt="Game Code">
+        </a>
+        <a href="chess screenshots/17.png" data-lightbox="chess" data-title="Chess Board View">
+            <img src="chess screenshots/17.png" alt="Game Code">
+        </a>
+      </div>
+    
+      <a class="launch-button" href="funkychess.jar" download>Download File</a>
+    </div>
+
+    <!-- Details for placeholder project -->
+    <div id="comingsoon" class="project-details">
+      <h3>Stay Tuned</h3>
+      <p>Another cool project is on its way. Check back soon!</p>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Hasan Aamir Jilani
+  </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const all = document.querySelectorAll('.project-details');
+      all.forEach(box => box.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</body>
+</html>

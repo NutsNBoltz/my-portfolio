@@ -123,13 +123,15 @@ form textarea {
   box-sizing: border-box;
 }
 
+input:invalid:focus,
+textarea:invalid:focus {
+  border: 2px solid red;
+}
+
 form textarea {
   resize:none;
   overflow:hidden;
   min-height:160px;
-  
-   
-
 }
 
 form input:focus,
@@ -151,4 +153,25 @@ form button {
 
 form button:hover {
   background-color: #003f80;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(2.5);
 }
