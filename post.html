@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Posts – Hasan Aamir Jilani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Hasan Aamir Jilani</h1>
+    <p>Software Engineering Student | Frontend Enthusiast | Lifelong Learner</p>
+  </header>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="post.html">Posts</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="posts">
+    <h2>My Posts</h2>
+
+    <article>
+      <h3>{Book Review}: The Laws of Power by Robert Greene</h3>
+      <p><em>Posted on June 28, 2025</em></p>
+      <p>This book changed the way I think about strategy and influence...</p>
+	  <button onclick="togglePost('post1', this)">Read more</button>
+      <div id="post1" class="full-post" style="display: none;">
+        <p>
+		<img src="lawspower.png" class="float-img">
+			
+          Although now mainstream, the book, <em>The 48 Laws of Power</em>, still stands as a strong pillar
+          for he who is on a journey to improve himself. The book is very well written and really pulls you in.
+          In <em>The 48 Laws of Power</em>, Robert Greene breaks down historical and psychological tactics 
+          for influence and control. While controversial, it’s a fascinating look at human behavior that 
+          blends perfectly with strategic thinking and personal development. After reading the book, I find myself
+          trying to implement it in all corners of life. It comes with many analogies and real life examples of how these
+          rules have lead to success and power.
+        </p>
+        
+        <p>
+        Robert Greene’s The 48 Laws of Power is one of those books that challenges your worldview — not by preaching, but 
+        by presenting raw, historical truths about how people navigate authority, control, and influence. It doesn’t ask you
+         to agree with the strategies, but to understand that power — whether you seek it or not — is a force constantly at 
+         play in social, political, and personal relationships.
+		</p>
+
+		<p>
+		What makes the book fascinating is its blend of brutal honesty and timeless relevance. Greene draws from the actions of 
+		emperors, generals, courtiers, and con artists to reveal how manipulation, strategy, and psychology have always been 
+		tools of those who rise to the top. Whether you use the laws, defend against them, or observe them in others,
+		 the book sharpens your awareness of how influence works in real life.
+		</p>
+
+		<p>
+		Some laws feel obvious in hindsight — like “Guard your reputation” — while others are uncomfortably cunning. Yet 
+		in every law lies a truth about human behavior that resonates across centuries.
+		</p>
+
+
+		<p>
+		Each chapter is short, sharp, and easy to revisit, making it ideal for reflection or strategic thinking.
+		</p>
+
+		<blockquote class="quote"><strong>Law 4:</strong> Always say less than necessary.</blockquote>
+
+
+		<p>
+		This was the most powerful message for me. Silence is power. It creates mystery, control, and authority. The more you speak
+		the more likely you are to say something foolish...
+		</p>
+      </div>
+    </article> 
+ 
+ 
+	<h4>Finished reading? More posts coming soon! If you have any suggestions on what you'd like to see next, <a href="contact.html">click here!</a></h4>
+ 
+  </section>
+
+  <footer>
+    &copy; 2025 Hasan Aamir Jilani
+  </footer>
+
+  <script>
+  function togglePost(id, btn) {
+    const post = document.getElementById(id);
+    const isHidden = post.style.display === 'none';
+
+    post.style.display = isHidden ? 'block' : 'none';
+    btn.textContent = isHidden ? 'Read less' : 'Read more';
+  }
+  </script>
+
+</body>
+</html>

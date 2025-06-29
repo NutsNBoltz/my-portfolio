@@ -1,0 +1,154 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      text-align: center;
+      background: #005599;
+      padding: 0.5em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #005599;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #ddd;
+      margin: 0.3em;
+      padding: 0.4em 0.8em;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #003366;
+      color: white;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+    }
+
+	
+.float-img {
+  float: right;
+  width: 250px;
+  margin: 0 0 1em 1em;
+  border-radius: 8px;
+}
+
+
+.quote {
+  font-style: italic;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #f0f8ff;
+  border-left: 5px solid #005599;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+form {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #e6f2ff;    /* light blue */
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  font-family: inherit;
+  font-size: 1em;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize:none;
+  overflow:hidden;
+  min-height:160px;
+  
+   
+
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+form button {
+  background-color: #005599;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003f80;
+}
