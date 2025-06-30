@@ -1,0 +1,150 @@
+\documentclass[res,12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{paracol} % I use this to divide my CV into two columns
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[margin=1cm]{geometry}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{enumitem} 
+\usepackage{titlesec}
+
+
+
+\titleformat{\section}
+  {\Large\bfseries\color{cyan!80!black}} 
+  {}                                    
+  {0pt}                                  
+  {}                                    
+  [\titlerule]                        
+\titlespacing{\section}{0pt}{1em}{1.3em}
+
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{2.5cm}  
+\columnratio{0.32}            
+
+
+\newcommand{\skillbar}[3]{
+  \noindent\textbf{#1}\\[0em] 
+  \textit{#2}\\[0em]
+  \begin{tikzpicture}[baseline]
+    \fill [black!50] (0,0) rectangle (6.5,0.3);
+    \fill [cyan!70!blue, rounded corners=0] (0,0) rectangle ({#3*6.5/100},0.3);
+  \end{tikzpicture}
+}
+
+
+\pagenumbering{gobble}
+
+
+
+
+\begin{document}
+
+\begin{wrapfigure}{r}{4cm} 
+    \vspace{-10pt}         
+    \includegraphics[width=4cm]{wbg.jpeg}
+\end{wrapfigure}
+
+{\huge \textbf{Hasan Aamir Jilani}}\\[0.3em]
+\textit{Computer Science Student} \\[1em]
+
+\textbf{Email:} \href{mailto:hjilani4@gmail.com}{hjilani4@gmail.com} \\
+\textbf{Telephone:} +49 01702185391 \\
+\textbf{Address:} Glöwener Str, 13585 Berlin \\
+\textbf{Age:} 21 \\
+\textbf{Nationality:} Pakistani
+
+
+\vspace{1em} 
+
+
+
+% Draw vertical divider in center of page
+\tikz[remember picture, overlay]
+  \draw[gray!60, line width=0.5pt]
+  ($(current page.center)+(-2.6,7cm)$) -- ($(current page.center)+(-2.6,-13.5cm)$);
+
+\begin{paracol}{2}
+\begin{leftcolumn}
+
+\section*{Knowledge \& Skills}
+\begin{itemize}[itemindent=1em, label= -]
+    \item HTML/CSS
+    \item Python
+    \item MySQL
+    \item Java
+    \item React.js
+    \item Angular.js
+    \item Visual Studio
+    \item Unity Game Engine
+    \item \LaTeX
+\end{itemize}
+
+\section*{Languages}
+
+\begin{itemize}[itemindent=1em, label=]
+    \item \skillbar{Urdu}{Native Speaker}{100}
+    \item \skillbar{English}{Fluent}{98}
+    \item \skillbar{German}{Working Proficiency (B1)}{65}
+    \item \skillbar{Arabic}{Conversational}{25}
+    \item \skillbar{Bahasa Melayu}{Conversational}{25}
+\end{itemize}
+
+
+\end{leftcolumn}
+
+\begin{rightcolumn}
+
+\vspace{0.65cm}
+
+\begin{minipage}{\linewidth}
+
+\section*{Work Experience}
+\textbf{Warehouse Worker @ OrientMaster GMBH}\\[0.3em]
+\textit {Berlin, Germany \hfill2024-2025}\\[0em]
+\begin{itemize}[itemindent=-1.5em, label=-]
+  \item Logistics Handling
+  \item Inventory Assortment
+  \item Forklift Certified
+\end{itemize}
+
+\textbf{IT Technician @ IBEX Global}\\[0.3em]
+\textit {Karachi, Pakistan \hfill2023-2024}
+\begin{itemize}[itemindent=-1.5em, label=-]
+  \item Resolved hardware, software, network issues for clients
+  \item Installed, configured, and maintained operating systems
+  \item Remote/Onsite technical support
+\end{itemize}
+
+\section*{Educational Background}
+
+\textbf{BSc. Software Engineering @ Gisma University of Applied Sciences}\\[0.3em]
+\textit {Berlin, Germany \hfill 2024-2027}
+\begin{itemize}[itemindent=-1.5em, label=-]
+  \item Worked with Python, SQL, and Git during university projects
+  \item Conducted a research thesis on AI in medical diagnostics
+\end{itemize}
+
+\section*{Certifications}
+
+\begin{itemize}[label=-, leftmargin=*, itemsep=0.4em, align=parleft]
+  \item Responsive Web Design (FreeCodeCamp)
+  \item Legacy JavaScript Algorithms \& Data Structures (FreeCodeCamp)
+  \item Data Science Bootcamp (Udemy)
+  \item Digital Marketing (Udemy)
+\end{itemize}
+
+
+\end{minipage}
+\end{rightcolumn}
+
+\end{paracol}
+
+\end{document}
+
