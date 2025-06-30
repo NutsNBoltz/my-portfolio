@@ -1,27 +1,27 @@
-#READ ME
+# READ ME
 
 ## The purpose of this repository is to host my portofolio website, and all its contents. It also contains my LaTeX CV .tex file, just in case you may be interested.
 
-##It contains the following, 
+## It contains the following, 
 
-##4 .html files:
+## 4 .html files:
 
 - index.html
 - posts.html
 - project.html
 - contact.html
 
-##1 .css file:
+## 1 .css file:
 
 - style.css
 
-##many images:
+## many images:
 
 - chess screenshots (for all the images in the gallery on the projects.html
 - a picture of me
 - chad.png (this was meant as a placeholder in the about section, but has been pushed anyways)
 
-##Chess Source Code Folder:
+## Chess Source Code Folder:
 
 - I uploaded this as well, just in case the .jar file does not work. You may take a look at the source code...
 - More information in the report.
