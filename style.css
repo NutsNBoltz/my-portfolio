@@ -30,6 +30,57 @@
       font-weight: bold;
     }
 
+.hero-header {
+  background-color: #003366; /* solid deep blue */
+  background-image: url("photos/temple.svg");
+  background-repeat: repeat;
+  background-size: 100px; /* adjust smaller if needed */
+  background-position: center;
+  color: white;
+  padding: 4em 2em;
+  position: relative;
+  text-align: center;
+}
+
+.hero-header::before {
+  display: none;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.hero-content nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.8em;
+  transition: background-color 0.3s;
+}
+
+.hero-content nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+
+
+
+
+
     section {
       padding: 2em;
       max-width: 900px;
