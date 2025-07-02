@@ -31,10 +31,10 @@
     }
 
 .hero-header {
-  background-color: #003366; /* solid deep blue */
+  background-color: #003366;
   background-image: url("photos/temple.svg");
   background-repeat: repeat;
-  background-size: 100px; /* adjust smaller if needed */
+  background-size: 100px;
   background-position: center;
   color: white;
   padding: 4em 2em;
