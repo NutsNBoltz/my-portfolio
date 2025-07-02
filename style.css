@@ -120,6 +120,7 @@ body {
       color: white;
       margin-top: 2em;
       border-top: 3px double black; 
+      border-bottom: 3px double black;
     }
 
     @media (max-width: 600px) {
